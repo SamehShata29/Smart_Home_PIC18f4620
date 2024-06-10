@@ -1,0 +1,50 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F431 `(v ~T0 @X0 0 tf ]
+"56 AECUL_Moduels/EEPROM_24C02C/../../mcc_generated_files/examples/i2c_master_example.h
+[; ;AECUL_Moduels/EEPROM_24C02C/../../mcc_generated_files/examples/i2c_master_example.h: 56: void I2C_Write1ByteRegister(i2c_address_t address, uint8_t reg, uint8_t data);
+[v _I2C_Write1ByteRegister `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"54
+[; ;AECUL_Moduels/EEPROM_24C02C/../../mcc_generated_files/examples/i2c_master_example.h: 54: uint8_t I2C_Read1ByteRegister(i2c_address_t address, uint8_t reg);
+[v _I2C_Read1ByteRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
+"213 AECUL_Moduels/EEPROM_24C02C/../../mcc_generated_files/examples/../i2c_master.h
+[; ;AECUL_Moduels/EEPROM_24C02C/../../mcc_generated_files/examples/../i2c_master.h: 213: void (*MSSP_InterruptHandler)(void);
+[v _MSSP_InterruptHandler `*F431 ~T0 @X0 1 e ]
+"10 AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 10: void EEPROM_24C02C_Write_Byte(i2c_address_t EEPORM_Address, i2c_address_t Byte_Address, uint8_t Data){
+[v _EEPROM_24C02C_Write_Byte `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+{
+[e :U _EEPROM_24C02C_Write_Byte ]
+[v _EEPORM_Address `uc ~T0 @X0 1 r1 ]
+[v _Byte_Address `uc ~T0 @X0 1 r2 ]
+[v _Data `uc ~T0 @X0 1 r3 ]
+[f ]
+"11
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 11:     I2C_Write1ByteRegister(EEPORM_Address, Byte_Address, Data);
+[e ( _I2C_Write1ByteRegister (3 , , _EEPORM_Address _Byte_Address _Data ]
+"12
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 12: }
+[e :UE 3 ]
+}
+"13
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 13: uint8_t EEPROM_24C02C_Read_Byte(i2c_address_t EEPORM_Address, i2c_address_t Byte_Address){
+[v _EEPROM_24C02C_Read_Byte `(uc ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _EEPROM_24C02C_Read_Byte ]
+[v _EEPORM_Address `uc ~T0 @X0 1 r1 ]
+[v _Byte_Address `uc ~T0 @X0 1 r2 ]
+[f ]
+"14
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 14:     uint8_t received_val = 0;
+[v _received_val `uc ~T0 @X0 1 a ]
+[e = _received_val -> -> 0 `i `uc ]
+"15
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 15:     received_val = I2C_Read1ByteRegister(EEPORM_Address, Byte_Address);
+[e = _received_val ( _I2C_Read1ByteRegister (2 , _EEPORM_Address _Byte_Address ]
+"16
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 16:     return received_val;
+[e ) _received_val ]
+[e $UE 4  ]
+"17
+[; ;AECUL_Moduels/EEPROM_24C02C/EEPROM_24C02C.c: 17: }
+[e :UE 4 ]
+}
