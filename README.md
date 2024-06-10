@@ -3,7 +3,7 @@
 
 
 ## Overview
-This is a simple practice project to test:
+This is a simple practice project to test generating code using MCC generator on MPLAB and:
 - I2C.
 - USART.
 - Interfacing Temperature sensor.
